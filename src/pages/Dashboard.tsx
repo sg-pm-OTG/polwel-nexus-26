@@ -1,0 +1,173 @@
+import { useState, useEffect } from "react";
+import { CreditCard, TrendingUp, Eye, Wallet } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Layout from "@/components/Layout";
+import SessionExpiryDialog from "@/components/SessionExpiryDialog";
+
+interface DashboardProps {
+  user: {
+    name: string;
+    nric: string;
+  };
+  onViewLoans: () => void;
+  onViewFixedDeposits: () => void;
+  onLogout: () => void;
+}
+
+const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: DashboardProps) => {
+  const [selectedPeriod, setSelectedPeriod] = useState("all");
+  const [showSessionExpiry, setShowSessionExpiry] = useState(false);
+
+  // Simulate session expiry warning after 3 minutes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSessionExpiry(true);
+    }, 3 * 60 * 1000); // 3 minutes
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleExtendSession = () => {
+    setShowSessionExpiry(false);
+    // Reset the timer for another 3 minutes
+    setTimeout(() => {
+      setShowSessionExpiry(true);
+    }, 3 * 60 * 1000);
+  };
+
+  // Mock data for demonstration
+  const mockData = {
+    loans: {
+      active: 2,
+      closed: 1,
+      pendingClose: 1
+    },
+    fixedDeposits: {
+      active: 2,
+      closed: 1
+    },
+    lastTransactions: [
+      { type: "Loan Repayment", amount: "-$850.00", date: "15 Jan 2024" }
+    ]
+  };
+
+  return (
+    <Layout user={user} onLogout={onLogout}>
+      <div className="space-y-8">
+        {/* Welcome Section */}
+        <div className="space-y-2">
+          <h1 className="text-3xl font-bold">
+            <span className="text-secondary">Welcome</span><span className="text-secondary">,</span> <span className="text-primary">{user.name}</span>
+          </h1>
+          <p className="text-muted-foreground">
+            Here's your financial overview for the past 5 years
+          </p>
+        </div>
+
+        {/* Overview Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Loan Accounts Card */}
+          <Card className="shadow-sm flex flex-col">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-lg font-bold">Loan Accounts</CardTitle>
+              <CreditCard className="h-4 w-4 text-secondary" />
+            </CardHeader>
+            <CardContent className="p-6 pt-0 flex-1 flex flex-col">
+              <div className="flex-1 space-y-3">
+                <div className="grid grid-cols-1 gap-2 text-sm">
+                  <div className="flex items-center justify-between">
+                    <span className="text-muted-foreground">Active</span>
+                    <Badge variant="secondary" className="bg-success text-success-foreground hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">
+                      {mockData.loans.active}
+                    </Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-muted-foreground">Closed</span>
+                    <Badge variant="outline" className="hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">{mockData.loans.closed}</Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-muted-foreground">Pending Close</span>
+                    <Badge variant="secondary" className="bg-warning text-warning-foreground hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">
+                      {mockData.loans.pendingClose}
+                    </Badge>
+                  </div>
+                </div>
+                <div className="border-t pt-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-medium text-foreground">Total Accounts</span>
+                    <Badge variant="secondary" className="bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">
+                      {mockData.loans.active + mockData.loans.closed + mockData.loans.pendingClose}
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button 
+                  onClick={onViewLoans}
+                  size="sm" 
+                  className="w-full bg-secondary text-primary hover:bg-secondary-hover"
+                >
+                  <Eye className="w-4 h-4 mr-2" />
+                  View Details
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Fixed Deposit Accounts Card */}
+          <Card className="shadow-sm flex flex-col">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-lg font-bold">Fixed Deposit Accounts</CardTitle>
+              <Wallet className="h-4 w-4 text-secondary" />
+            </CardHeader>
+            <CardContent className="p-6 pt-0 flex-1 flex flex-col">
+              <div className="flex-1 space-y-3">
+                <div className="grid grid-cols-1 gap-2 text-sm">
+                  <div className="flex items-center justify-between">
+                    <span className="text-muted-foreground">Active</span>
+                    <Badge variant="secondary" className="bg-success text-success-foreground hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">
+                      {mockData.fixedDeposits.active}
+                    </Badge>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-muted-foreground">Closed</span>
+                    <Badge variant="outline" className="hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">{mockData.fixedDeposits.closed}</Badge>
+                  </div>
+                </div>
+                <div className="border-t pt-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-medium text-foreground">Total Accounts</span>
+                    <Badge variant="secondary" className="bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">
+                      {mockData.fixedDeposits.active + mockData.fixedDeposits.closed}
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button 
+                  onClick={onViewFixedDeposits}
+                  size="sm" 
+                  className="w-full bg-secondary text-primary hover:bg-secondary-hover"
+                >
+                  <Eye className="w-4 h-4 mr-2" />
+                  View Details
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
+        </div>
+
+        <SessionExpiryDialog 
+          isOpen={showSessionExpiry}
+          onExtendSession={handleExtendSession}
+          onLogout={onLogout}
+        />
+      </div>
+    </Layout>
+  );
+};
+
+export default Dashboard;

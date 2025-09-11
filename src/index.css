@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NEXUS Government Financial Portal Design System 
+Professional, secure, and trustworthy design for government security guards
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Clean government portal aesthetic with subtle pattern */
+    --background: 0 0% 0% / 0.05;
+    --foreground: 215 25% 15%;
+
+    /* Card system - Professional and clean */
+    --card: 0 0% 100% / 0.95;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* POLWEL Navy - Primary brand color */
+    --primary: 215 100% 14%;  /* #001A45 */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 215 100% 12%;
+
+    /* POLWEL Orange - Secondary brand color */
+    --secondary: 31 95% 54%;  /* #F7941D */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 31 95% 50%;
+
+    /* POLWEL Grey - Tertiary brand color */
+    --polwel-grey: 210 3% 43%;  /* #6D6E71 */
+
+    /* Muted tones for professional look */
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 15% 50%;
+
+    /* Accent - Warm professional tone */
+    --accent: 210 20% 95%;
+    --accent-foreground: 215 25% 15%;
+
+    /* Status colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 214 84% 40%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Mulish', 'Century Gothic', 'Trebuchet MS', Arial, sans-serif;
+    background-image: url('/lovable-uploads/066f2b90-7c56-4901-972c-3d59cda3949b.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  /* Special background for login page */
+  .login-page {
+    background-image: url('/lovable-uploads/045be9aa-5111-412d-a0cf-cf6ddfcbc2cb.png') !important;
+  }
+
+  /* Background for other pages (not login) */
+  body:not(.login-page) {
+    background: #6d6e71 !important;
+    background-color: rgb(109 110 113 / 0.9) !important;
+  }
+
+  /* Semi-bold styling for orange buttons */
+  .bg-secondary {
+    font-weight: 600;
+  }
+}
