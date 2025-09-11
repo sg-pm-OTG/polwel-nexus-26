@@ -132,6 +132,11 @@ All colors MUST be HSL.
     background-image: url('/lovable-uploads/045be9aa-5111-412d-a0cf-cf6ddfcbc2cb.png') !important;
   }
 
+  /* Background for other pages (not login) */
+  body:not(.login-page) {
+    background: #6d6e71 !important;
+    background-color: rgb(109 110 113 / 0.9) !important;
+  }
 
   /* Semi-bold styling for orange buttons */
   .bg-secondary {
