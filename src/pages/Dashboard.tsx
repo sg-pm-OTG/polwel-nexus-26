@@ -164,13 +164,13 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
         <div className="mt-8">
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="/lovable-uploads/9e862da2-b14d-4f69-bb8a-0809a13a4989.png" 
+              src="/lovable-uploads/43e95ca6-f548-47f3-9c02-4ba8d2d613f3.png" 
               alt="POLWEL Loan Options" 
               className="w-full h-auto object-cover"
             />
             <div className="absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-4 text-center">
               <h2 className="text-[#1e3a8a] text-2xl md:text-3xl font-bold leading-tight">
-                POLWEL Members<br />Survey 2024
+                POLWEL IS AROUND FOR EVERY OF YOUR MILESTONE
               </h2>
               <a 
                 href="https://polwel.org.sg/" 
@@ -178,7 +178,7 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-2 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-colors"
               >
-                Check out the survey findings!
+                Find out more
               </a>
             </div>
           </div>
