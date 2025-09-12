@@ -164,12 +164,12 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
         <div className="mt-8">
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="/lovable-uploads/b5d8c4b2-14f0-43a6-8dc9-d6fc085ee687.png" 
-              alt="POLWEL Members Survey 2024 Results" 
+              src="/lovable-uploads/9e862da2-b14d-4f69-bb8a-0809a13a4989.png" 
+              alt="POLWEL Loan Options" 
               className="w-full h-auto object-cover"
             />
-            <div className="absolute left-8 top-1/2 transform -translate-y-1/2 flex flex-col items-start space-y-4">
-              <h2 className="text-white text-2xl md:text-3xl font-bold leading-tight">
+            <div className="absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-4 text-center">
+              <h2 className="text-[#1e3a8a] text-2xl md:text-3xl font-bold leading-tight">
                 POLWEL Members<br />Survey 2024
               </h2>
               <a 
