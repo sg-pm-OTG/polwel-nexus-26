@@ -97,11 +97,11 @@ const Login = ({ onLogin, onUserNotFound }: LoginProps) => {
               <a href="https://polwel.org.sg/contact/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 Contact Us
               </a>
-              <a href="https://polwel.org.sg/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                Privacy Policy
-              </a>
               <a href="https://www.polwel.org.sg/fixed-deposits/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 FAQ
+              </a>
+              <a href="https://polwel.org.sg/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                Privacy Policy
               </a>
               <a href="https://polwel.org.sg/terms-of-use/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 Terms of Use
