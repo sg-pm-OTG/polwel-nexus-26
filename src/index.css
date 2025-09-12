@@ -118,18 +118,18 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     font-family: 'Mulish', 'Century Gothic', 'Trebuchet MS', Arial, sans-serif;
-    background-image: url('/lovable-uploads/8494801b-680a-4c99-81f8-ecd955071040.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #f1f1f1;
   }
 
   /* Special background for login page */
   .login-page {
     background-image: url('/lovable-uploads/045be9aa-5111-412d-a0cf-cf6ddfcbc2cb.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
 
