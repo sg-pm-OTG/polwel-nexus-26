@@ -45,8 +45,8 @@ const Login = ({ onLogin, onUserNotFound }: LoginProps) => {
           </div>
 
           {/* Welcome Message - Between Logo and Card */}
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-primary whitespace-nowrap">
+          <div className="text-center px-4">
+            <h1 className="text-2xl md:text-3xl font-bold text-primary break-words">
               Welcome to POLWEL Nexus Financial Portal
             </h1>
           </div>

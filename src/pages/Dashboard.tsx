@@ -160,6 +160,27 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
 
         </div>
 
+        {/* Announcements Section */}
+        <div className="mt-8">
+          <div className="relative overflow-hidden rounded-lg shadow-lg">
+            <img 
+              src="/lovable-uploads/c2d2f452-3dfe-496b-84e8-aa7afc9c9dd7.png" 
+              alt="POLWEL Members Survey 2024 Results" 
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-4 left-4 md:left-8">
+              <a 
+                href="https://polwel.org.sg/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-colors"
+              >
+                Check out the survey findings!
+              </a>
+            </div>
+          </div>
+        </div>
+
         <SessionExpiryDialog 
           isOpen={showSessionExpiry}
           onExtendSession={handleExtendSession}
