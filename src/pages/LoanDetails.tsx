@@ -217,7 +217,7 @@ const LoanDetails = ({ user, onBackToDashboard, onLogout }: LoanDetailsProps) =>
                       </div>
                       <div>
                         <span className="text-muted-foreground">Total Outstanding:</span>
-                        <p className="font-medium text-secondary">{formatCurrency(loan.totalOutstanding)}</p>
+                        <p className="font-bold" style={{color: '#1e3a8a'}}>{formatCurrency(loan.totalOutstanding)}</p>
                       </div>
                     </div>
                   </div>

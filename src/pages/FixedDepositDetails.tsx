@@ -191,7 +191,7 @@ const FixedDepositDetails = ({ user, onBackToDashboard, onLogout }: FixedDeposit
                       </div>
                       <div>
                         <span className="text-muted-foreground">Withdrawal Amount:</span>
-                        <p className="font-medium">{formatCurrency(fd.withdrawalAmount)}</p>
+                        <p className="font-bold" style={{color: '#1e3a8a'}}>{formatCurrency(fd.withdrawalAmount)}</p>
                       </div>
                      </div>
                      <div className="border-t pt-3">
