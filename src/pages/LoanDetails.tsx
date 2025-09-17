@@ -59,7 +59,7 @@ const LoanDetails = ({ user, onBackToDashboard, onLogout }: LoanDetailsProps) =>
       outstandingPrincipal: 0.00,
       outstandingInterest: 0.00,
       totalOutstanding: 0.00,
-      status: "Pending Close",
+      status: "Pending Closure",
       loanType: "Medical Loan"
     }
   ];
@@ -68,7 +68,7 @@ const LoanDetails = ({ user, onBackToDashboard, onLogout }: LoanDetailsProps) =>
     switch (status) {
       case "Active":
         return <Badge className="bg-success text-success-foreground">{status}</Badge>;
-      case "Pending Close":
+      case "Pending Closure":
         return <Badge className="bg-warning text-warning-foreground">{status}</Badge>;
       case "Closed":
         return <Badge variant="outline">{status}</Badge>;
@@ -103,7 +103,7 @@ const LoanDetails = ({ user, onBackToDashboard, onLogout }: LoanDetailsProps) =>
               Loan Details
             </h1>
             <p className="text-muted-foreground">
-              Loan accounts from the last 5 years (excluding rejected applications)
+              Loan accounts from the last 5 years
             </p>
           </div>
         </div>
@@ -137,9 +137,9 @@ const LoanDetails = ({ user, onBackToDashboard, onLogout }: LoanDetailsProps) =>
                   </Badge>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Pending Close</span>
+                  <span className="text-sm text-muted-foreground">Pending Closure</span>
                   <Badge className="bg-warning text-warning-foreground">
-                    {mockLoans.filter(loan => loan.status === "Pending Close").length}
+                    {mockLoans.filter(loan => loan.status === "Pending Closure").length}
                   </Badge>
                 </div>
                 <div className="border-t pt-4 space-y-3">

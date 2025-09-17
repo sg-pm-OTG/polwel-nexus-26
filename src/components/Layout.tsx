@@ -74,7 +74,7 @@ const Layout = ({ children, user, onLogout }: LayoutProps) => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex flex-wrap gap-6 text-sm">
-              <a href="https://polwel.org.sg/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              <a href="https://polwel.org.sg/corporate-profile/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 About POLWEL
               </a>
               <a href="https://polwel.org.sg/contact/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">

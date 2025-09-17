@@ -88,7 +88,7 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
                     <Badge variant="outline" className="hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">{mockData.loans.closed}</Badge>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground">Pending Close</span>
+                    <span className="text-muted-foreground">Pending Closure</span>
                     <Badge variant="secondary" className="bg-warning text-warning-foreground hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">
                       {mockData.loans.pendingClose}
                     </Badge>

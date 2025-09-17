@@ -88,7 +88,7 @@ const FixedDepositDetails = ({ user, onBackToDashboard, onLogout }: FixedDeposit
               Fixed Deposit Details
             </h1>
             <p className="text-muted-foreground">
-              Fixed deposit accounts from the last 5 years (excluding rejected applications)
+              Fixed deposit accounts from the last 5 years
             </p>
           </div>
         </div>
