@@ -176,17 +176,35 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
               alt="POLWEL Loan Options" 
               className="w-full h-auto object-cover"
             />
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-4 text-center">
+            {/* Desktop overlay text and button */}
+            <div className="hidden sm:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex-col items-center space-y-4 text-center">
               <h2 className="text-[#1e3a8a] text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight px-4">
                 POLWEL IS AROUND FOR EVERY OF YOUR MILESTONE
               </h2>
             </div>
-            <div className="absolute left-1/2 bottom-16 transform -translate-x-1/2 flex justify-center">
+            <div className="hidden sm:flex absolute left-1/2 bottom-16 transform -translate-x-1/2 justify-center">
               <a 
                 href="https://polwel.org.sg/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block px-4 py-2 sm:px-6 sm:py-2 bg-primary text-white text-sm sm:text-base font-semibold rounded-md hover:bg-primary/90 transition-colors"
+              >
+                Find out more
+              </a>
+            </div>
+          </div>
+          
+          {/* Mobile text and button below image */}
+          <div className="sm:hidden mt-4 text-center space-y-4">
+            <h2 className="text-[#1e3a8a] text-lg font-bold leading-tight px-4">
+              POLWEL IS AROUND FOR EVERY OF YOUR MILESTONE
+            </h2>
+            <div className="flex justify-center">
+              <a 
+                href="https://polwel.org.sg/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-primary text-white text-sm font-semibold rounded-md hover:bg-primary/90 transition-colors"
               >
                 Find out more
               </a>
