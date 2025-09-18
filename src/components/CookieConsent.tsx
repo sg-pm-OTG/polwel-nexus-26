@@ -29,7 +29,7 @@ const CookieConsent = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex-1">
-            <h3 className="font-semibold text-foreground mb-1">Cookie Notice</h3>
+            <h3 className="font-semibold text-foreground mb-1">Necessary Cookie Notice</h3>
             <p className="text-sm text-muted-foreground">
               We use essential cookies to keep you securely signed in and to improve your experience. By continuing, you agree to our use of cookies.
             </p>
