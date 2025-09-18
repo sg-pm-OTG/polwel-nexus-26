@@ -180,7 +180,7 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
             />
             {/* Desktop overlay text and button */}
             <div className="hidden sm:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex-col items-center space-y-4 text-center">
-              <h2 className="text-[#1e3a8a] text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight px-4">
+              <h2 className="text-[#001a45] text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight px-4">
                 POLWEL IS AROUND FOR EVERY OF YOUR MILESTONE
               </h2>
             </div>
@@ -198,7 +198,7 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
           
           {/* Mobile text and button below image */}
           <div className="sm:hidden mt-4 text-center space-y-4">
-            <h2 className="text-[#1e3a8a] text-lg font-bold leading-tight px-4">
+            <h2 className="text-[#001a45] text-lg font-bold leading-tight px-4">
               POLWEL IS AROUND FOR EVERY OF YOUR MILESTONE
             </h2>
             <div className="flex justify-center">
