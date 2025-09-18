@@ -42,6 +42,13 @@ const CookieConsent = () => {
             >
               Got it!
             </Button>
+            <Button 
+              variant="outline"
+              className="bg-primary text-white hover:bg-primary/90 border-primary font-semibold"
+              size="sm"
+            >
+              Privacy Policy
+            </Button>
           </div>
         </div>
       </div>

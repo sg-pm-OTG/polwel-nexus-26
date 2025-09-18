@@ -24,7 +24,7 @@ const UserNotFound = ({ onBackToLogin }: UserNotFoundProps) => {
           <CardContent className="space-y-6">
             <div className="p-6 rounded-lg text-center" style={{ backgroundColor: '#c5c5c6' }}>
               <p className="text-sm text-black">
-                If you require any assistance, please contact the Financial Services Division<br />at <a href="tel:62356428" className="text-primary hover:underline">6235 6428</a> or email <a href="mailto:fsd@polwel.org.sg" className="text-primary hover:underline">fsd@polwel.org.sg</a>
+                If you require any assistance, please contact the Financial Services Division<br />at <a href="tel:62356428" className="text-primary hover:underline underline">6235 6428</a> or email <a href="mailto:fsd@polwel.org.sg" className="text-primary hover:underline underline">fsd@polwel.org.sg</a>
               </p>
             </div>
 

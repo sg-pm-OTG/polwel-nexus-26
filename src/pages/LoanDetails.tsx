@@ -25,7 +25,7 @@ const LoanDetails = ({ user, onBackToDashboard, onLogout }: LoanDetailsProps) =>
       interestRate: 3.25,
       tenure: 60,
       monthlyRepayment: 453.20,
-      lastRepaymentDate: "15 Jan 2024",
+      lastRepaymentDate: "24 Aug 2025",
       outstandingPrincipal: 22150.00,
       outstandingInterest: 245.80,
       totalOutstanding: 22395.80,
@@ -237,7 +237,7 @@ const LoanDetails = ({ user, onBackToDashboard, onLogout }: LoanDetailsProps) =>
               <div className="space-y-1">
                 <h4 className="font-semibold text-black">Information</h4>
                 <p className="text-sm text-black">
-                  For any queries, please contact the POLWEL Financial Services Division at <a href="tel:62356428" className="text-primary hover:underline">6235 6428 (option 1)</a> or email <a href="mailto:fsd@polwel.org.sg" className="text-primary hover:underline">fsd@polwel.org.sg</a>.
+                  For any queries, please contact the POLWEL Financial Services Division at <a href="tel:62356428" className="text-primary hover:underline underline">6235 6428 (option 1)</a> or email <a href="mailto:fsd@polwel.org.sg" className="text-primary hover:underline underline">fsd@polwel.org.sg</a>.
                 </p>
               </div>
             </div>
