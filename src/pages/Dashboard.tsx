@@ -67,11 +67,13 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
         </div>
 
         {/* Last Retrieved Information */}
-        <div className="bg-card p-3 rounded-lg">
-          <p className="text-sm text-muted-foreground">
-            Information last retrieved: 18 Sep 2025, 3:30 PM
-          </p>
-        </div>
+        <Card className="shadow-sm">
+          <CardContent className="p-3">
+            <p className="text-sm text-muted-foreground">
+              Information last retrieved: 18 Sep 2025, 3:30 PM
+            </p>
+          </CardContent>
+        </Card>
 
         {/* Overview Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -143,7 +145,7 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
                     <Badge variant="outline" className="hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">{mockData.fixedDeposits.closed}</Badge>
                   </div>
                 </div>
-                <div className="py-2"></div>
+                <div className="md:py-2"></div>
                 <div className="border-t pt-3">
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium text-foreground">Total Accounts</span>

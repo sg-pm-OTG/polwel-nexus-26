@@ -94,11 +94,13 @@ const FixedDepositDetails = ({ user, onBackToDashboard, onLogout }: FixedDeposit
         </div>
 
         {/* Last Retrieved Information */}
-        <div className="bg-card p-3 rounded-lg">
-          <p className="text-sm text-muted-foreground">
-            Information last retrieved: 13 Aug 2024, 2:30 PM
-          </p>
-        </div>
+        <Card className="shadow-sm">
+          <CardContent className="p-3">
+            <p className="text-sm text-muted-foreground">
+              Information last retrieved: 13 Aug 2024, 2:30 PM
+            </p>
+          </CardContent>
+        </Card>
 
         {/* Summary Card */}
         <div className="grid grid-cols-1 max-w-md">

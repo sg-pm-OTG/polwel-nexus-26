@@ -44,7 +44,8 @@ const CookieConsent = () => {
             </Button>
             <Button 
               variant="outline"
-              className="bg-primary text-white hover:bg-primary/90 border-primary font-semibold"
+              onClick={() => window.open('https://polwel.org.sg/privacy-policy/', '_blank')}
+              className="bg-[#1e3a8a] text-white border-[#1e3a8a] hover:bg-[#1e3a8a]/90 hover:text-white hover:border-[#1e3a8a]/90 font-semibold"
               size="sm"
             >
               Privacy Policy
