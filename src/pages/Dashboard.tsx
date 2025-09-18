@@ -144,7 +144,7 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
                     <Badge variant="outline" className="hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">{mockData.fixedDeposits.closed}</Badge>
                   </div>
                 </div>
-                <div className="py-3"></div>
+                <div className="py-2"></div>
                 <div className="border-t pt-3">
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium text-foreground">Total Accounts</span>
@@ -182,7 +182,7 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
                 POLWEL IS AROUND FOR EVERY OF YOUR MILESTONE
               </h2>
             </div>
-            <div className="absolute left-1/2 bottom-1/3 transform -translate-x-1/2 flex justify-center">
+            <div className="absolute left-1/2 bottom-1/4 transform -translate-x-1/2 flex justify-center">
               <a 
                 href="https://polwel.org.sg/" 
                 target="_blank" 

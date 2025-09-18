@@ -40,7 +40,7 @@ const LoanDetails = ({ user, onBackToDashboard, onLogout }: LoanDetailsProps) =>
       interestRate: 2.85,
       tenure: 36,
       monthlyRepayment: 437.50,
-      lastRepaymentDate: "10 Jan 2024",
+      lastRepaymentDate: "24 Aug 2025",
       outstandingPrincipal: 8520.00,
       outstandingInterest: 112.30,
       totalOutstanding: 8632.30,
