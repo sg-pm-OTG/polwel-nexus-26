@@ -22,9 +22,9 @@ const UserNotFound = ({ onBackToLogin }: UserNotFoundProps) => {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'hsl(210 3% 43% / 0.8)' }}>
-              <p className="text-sm text-white">
-                If you require any assistance, please contact the Financial Services Division<br />at <a href="tel:62356428" className="text-secondary hover:underline">6235 6428</a> or email <a href="mailto:fsd@polwel.org.sg" className="text-secondary hover:underline">fsd@polwel.org.sg</a>
+            <div className="p-6 rounded-lg text-center" style={{ backgroundColor: '#c5c5c6' }}>
+              <p className="text-sm text-black">
+                If you require any assistance, please contact the Financial Services Division<br />at <a href="tel:62356428" className="text-primary hover:underline">6235 6428</a> or email <a href="mailto:fsd@polwel.org.sg" className="text-primary hover:underline">fsd@polwel.org.sg</a>
               </p>
             </div>
 

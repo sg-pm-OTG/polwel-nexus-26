@@ -64,6 +64,13 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
           <p className="text-muted-foreground">
             Here's your financial overview for the past 5 years
           </p>
+          
+          {/* Information Last Retrieved Banner */}
+          <div className="mt-4 p-3 bg-card border border-border rounded-lg shadow-sm">
+            <p className="text-sm text-muted-foreground text-center">
+              Information last retrieved on: <span className="font-medium text-foreground">18 Sep 2025, 3:30 PM</span>
+            </p>
+          </div>
         </div>
 
         {/* Overview Cards */}
@@ -136,6 +143,7 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
                     <Badge variant="outline" className="hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">{mockData.fixedDeposits.closed}</Badge>
                   </div>
                 </div>
+                <div className="py-2"></div>
                 <div className="border-t pt-3">
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium text-foreground">Total Accounts</span>
@@ -164,14 +172,16 @@ const Dashboard = ({ user, onViewLoans, onViewFixedDeposits, onLogout }: Dashboa
         <div className="mt-8">
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="/lovable-uploads/43e95ca6-f548-47f3-9c02-4ba8d2d613f3.png" 
+              src="/polwel-announcement-new.png" 
               alt="POLWEL Loan Options" 
               className="w-full h-auto object-cover"
             />
-            <div className="absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-4 text-center">
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center space-y-4 text-center">
               <h2 className="text-[#1e3a8a] text-2xl md:text-3xl font-bold leading-tight">
                 POLWEL IS AROUND FOR EVERY OF YOUR MILESTONE
               </h2>
+            </div>
+            <div className="absolute left-1/2 bottom-1/4 transform -translate-x-1/2 flex justify-center">
               <a 
                 href="https://polwel.org.sg/" 
                 target="_blank" 

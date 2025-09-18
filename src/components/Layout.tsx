@@ -33,7 +33,7 @@ const Layout = ({ children, user, onLogout }: LayoutProps) => {
             <div className="flex items-center gap-6">
               <img src={polwelLogo} alt="Polwel" className="h-12" />
               <div>
-                <h1 className="text-lg font-bold text-primary mt-1">NEXUS Financial Portal</h1>
+                <h1 className="text-lg font-bold text-primary mt-1">Nexus Financial Portal</h1>
               </div>
             </div>
             
@@ -105,8 +105,8 @@ const Layout = ({ children, user, onLogout }: LayoutProps) => {
               <a href="https://www.facebook.com/SGPoliceGifts/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-primary hover:text-secondary">
                 <Facebook className="h-5 w-5" fill="currentColor" />
               </a>
-              <a href="https://www.instagram.com/sgpolicegifts/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-primary hover:text-secondary">
-                <svg className="h-5 w-5" fill="hsl(215 100% 14%)" viewBox="0 0 24 24">
+              <a href="https://www.instagram.com/sgpolicegifts/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-primary hover:text-secondary transition-colors">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" strokeLinecap="round" strokeWidth="2"/>

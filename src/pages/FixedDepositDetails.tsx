@@ -215,16 +215,16 @@ const FixedDepositDetails = ({ user, onBackToDashboard, onLogout }: FixedDeposit
         </div>
 
         {/* Information Note */}
-        <Card className="shadow-sm" style={{ backgroundColor: 'hsl(210 3% 43% / 0.8)' }}>
+        <Card className="shadow-sm" style={{ backgroundColor: '#c5c5c6' }}>
           <CardContent className="pt-6">
             <div className="flex items-start gap-3">
-              <div className="text-2xl text-white">
+              <div className="text-2xl text-black">
                 ⓘ
               </div>
               <div className="space-y-1">
-                <h4 className="font-semibold text-white">Information</h4>
-                <p className="text-sm text-white">
-                  For any queries, please contact the POLWEL Financial Services Division at <a href="tel:62356428" className="text-secondary hover:underline">6235 6428 (option 1)</a> or email <a href="mailto:fsd@polwel.org.sg" className="text-secondary hover:underline">fsd@polwel.org.sg</a>.
+                <h4 className="font-semibold text-black">Information</h4>
+                <p className="text-sm text-black">
+                  For any queries, please contact the POLWEL Financial Services Division at <a href="tel:62356428" className="text-primary hover:underline">6235 6428 (option 1)</a> or email <a href="mailto:fsd@polwel.org.sg" className="text-primary hover:underline">fsd@polwel.org.sg</a>.
                 </p>
               </div>
             </div>

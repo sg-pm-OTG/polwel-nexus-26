@@ -40,15 +40,7 @@ const CookieConsent = () => {
               className="bg-secondary text-primary hover:bg-secondary-hover font-semibold"
               size="sm"
             >
-              Accept cookies
-            </Button>
-            <Button
-              onClick={handleReject}
-              variant="outline"
-              className="border-primary text-primary hover:bg-background"
-              size="sm"
-            >
-              Reject cookies
+              Got it!
             </Button>
           </div>
         </div>
