@@ -39,8 +39,8 @@ const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
           {/* NRIC Confirmation Card */}
           <Card className="w-full max-w-sm shadow-lg">
             <CardHeader className="space-y-1">
-              <CardDescription className="text-center text-base text-black font-bold">
-                Confirm your identity
+              <CardDescription className="text-center text-base text-black">
+                Confirm Your Identity
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -56,7 +56,7 @@ const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
                     readOnly
                     className="bg-gray-50 cursor-not-allowed"
                   />
-                  <p className="text-xs text-gray-500">
+                  <p className="text-sm text-gray-500 italic">
                     This information will be used to access your POLWEL account
                   </p>
                 </div>
