@@ -56,7 +56,7 @@ const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
                     readOnly
                     className="bg-gray-100 text-gray-500 cursor-not-allowed border-gray-300"
                   />
-                  <p className="text-base text-gray-500 italic">
+                  <p className="text-sm text-gray-500 italic">
                     This information will be used to access your POLWEL account
                   </p>
                 </div>
