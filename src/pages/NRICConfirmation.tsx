@@ -39,7 +39,7 @@ const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
           {/* NRIC Confirmation Card */}
           <Card className="w-full max-w-sm shadow-lg">
             <CardHeader className="space-y-1">
-              <CardDescription className="text-center text-base text-black">
+              <CardDescription className="text-center text-base text-black font-bold">
                 Confirm your identity
               </CardDescription>
             </CardHeader>
@@ -63,18 +63,11 @@ const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
 
                 <Button 
                   onClick={onProceed}
-                  className="w-full py-4 text-white font-bold rounded-md hover:bg-[#B0262D] transition-colors"
-                  style={{ backgroundColor: '#F4333D', fontFamily: 'Poppins', fontSize: '16px' }}
+                  className="w-full py-4 bg-secondary text-primary hover:bg-secondary-hover transition-colors"
                   size="lg"
                 >
                   Proceed to Log In
                 </Button>
-                
-                <div className="text-center">
-                  <p className="text-xs text-gray-500">
-                    By proceeding, you confirm that this information is correct
-                  </p>
-                </div>
               </div>
             </CardContent>
           </Card>
