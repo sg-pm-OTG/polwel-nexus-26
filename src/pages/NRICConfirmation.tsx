@@ -35,7 +35,7 @@ const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
           <CardContent className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="nric" className="text-sm font-medium text-gray-700">
-                NRIC/FIN Retrieved from Singpass
+                NRIC/FIN
               </Label>
               <Input
                 id="nric"
