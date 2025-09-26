@@ -54,20 +54,22 @@ const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
                     type="text"
                     value={nric}
                     readOnly
-                    className="bg-gray-50 cursor-not-allowed"
+                    className="bg-gray-100 text-gray-500 cursor-not-allowed border-gray-300"
                   />
-                  <p className="text-sm text-gray-500 italic">
+                  <p className="text-base text-gray-500 italic">
                     This information will be used to access your POLWEL account
                   </p>
                 </div>
 
-                <Button 
-                  onClick={onProceed}
-                  className="w-full py-4 bg-secondary text-primary hover:bg-secondary-hover transition-colors"
-                  size="lg"
-                >
-                  Proceed to Log In
-                </Button>
+                <div className="pt-4">
+                  <Button 
+                    onClick={onProceed}
+                    className="w-full py-4 bg-secondary text-primary hover:bg-secondary-hover transition-colors"
+                    size="lg"
+                  >
+                    Proceed to Log In
+                  </Button>
+                </div>
               </div>
             </CardContent>
           </Card>
