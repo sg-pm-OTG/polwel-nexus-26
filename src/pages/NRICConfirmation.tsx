@@ -72,8 +72,7 @@ const NRICConfirmation = ({ nric, onProceed, onCancel }: NRICConfirmationProps) 
                   </Button>
                   <Button 
                     onClick={onCancel}
-                    variant="outline"
-                    className="w-full py-4"
+                    className="w-full py-4 bg-primary text-white hover:bg-primary/90"
                     size="lg"
                   >
                     Cancel
