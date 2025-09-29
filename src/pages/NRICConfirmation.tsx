@@ -41,7 +41,7 @@ const NRICConfirmation = ({ nric, onProceed, onCancel }: NRICConfirmationProps) 
           <Card className="w-full max-w-sm shadow-lg">
             <CardHeader className="space-y-1">
               <CardDescription className="text-center text-base text-black">
-                We have retrieved the following information from SingPass. Kindly confirm this is you to continue with the login.
+                We have retrieved the following information from Singpass. Kindly confirm this is you to continue with the login.
               </CardDescription>
             </CardHeader>
             <CardContent>
