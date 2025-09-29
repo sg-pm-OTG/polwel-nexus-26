@@ -12,9 +12,10 @@ const polwelLogo = "/lovable-uploads/05acceb6-d701-4f43-80b8-8b55ffc82105.png";
 interface NRICConfirmationProps {
   nric: string;
   onProceed: () => void;
+  onCancel: () => void;
 }
 
-const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
+const NRICConfirmation = ({ nric, onProceed, onCancel }: NRICConfirmationProps) => {
   return (
     <div className="min-h-screen bg-background flex flex-col login-page">
       {/* Warning Bar */}
@@ -40,7 +41,7 @@ const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
           <Card className="w-full max-w-sm shadow-lg">
             <CardHeader className="space-y-1">
               <CardDescription className="text-center text-base text-black">
-                Confirm Your Identity
+                We have retrieved the following information from SingPass. Kindly confirm this is you to continue with the login.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -57,17 +58,25 @@ const NRICConfirmation = ({ nric, onProceed }: NRICConfirmationProps) => {
                     className="bg-gray-100 text-gray-500 cursor-not-allowed border-gray-300"
                   />
                   <p className="text-sm text-gray-500 italic">
-                    This information will be used to access your POLWEL account
+                    This information will be used to access your financial accounts with POLWEL.
                   </p>
                 </div>
 
-                <div className="pt-4">
+                <div className="pt-4 space-y-3">
                   <Button 
                     onClick={onProceed}
                     className="w-full py-4 bg-secondary text-primary hover:bg-secondary-hover transition-colors"
                     size="lg"
                   >
                     Proceed to Log In
+                  </Button>
+                  <Button 
+                    onClick={onCancel}
+                    variant="outline"
+                    className="w-full py-4"
+                    size="lg"
+                  >
+                    Cancel
                   </Button>
                 </div>
               </div>

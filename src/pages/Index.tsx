@@ -67,6 +67,7 @@ const NexusPortal = () => {
         <NRICConfirmation
           nric={user.nric}
           onProceed={handleProceedToLogin}
+          onCancel={handleBackToLogin}
         />
       ) : null;
     
